@@ -39,26 +39,20 @@
 
 @font-face {
     font-family: "Fraunces";
-    src: local("Fraunces"),
-        local("Fraunces SemiBold Italic"),
-        local("Fraunces-SemiBoldItalic"),
-        url("/fonts/fraunces-italic-600.woff2") format("woff2"),
+    src: url("/fonts/fraunces-italic-560.woff2") format("woff2"),
         url("/fonts/fraunces-italic-600.woff") format("woff"),
         url("/fonts/fraunces-italic-600.ttf") format("truetype");
-    font-weight: 600;
+    font-weight: 560;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Fraunces";
-    src: local("Fraunces"),
-        local("Fraunces SemiBold"),
-        local("Fraunces-SemiBold"),
-        url("/fonts/fraunces-normal-600.woff2") format("woff2"),
+    src: url("/fonts/fraunces-normal-560.woff2") format("woff2"),
         url("/fonts/fraunces-normal-600.woff") format("woff"),
         url("/fonts/fraunces-normal-600.ttf") format("truetype");
-    font-weight: 600;
+    font-weight: 560;
     font-style: normal;
     font-display: swap;
 }
