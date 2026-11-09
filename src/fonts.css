@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Figtree";
+    src: local("Figtree"),
+        local("Figtree Regular"),
+        local("Figtree-Regular"),
+        url("/fonts/figtree-normal-400.woff2") format("woff2"),
+        url("/fonts/figtree-normal-400.woff") format("woff"),
+        url("/fonts/figtree-normal-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: local("IBM Plex Mono"),
+        local("IBM Plex Mono Regular"),
+        local("IBMPlexMono-Regular"),
+        url("/fonts/ibm-plex-mono-normal-400.woff2") format("woff2"),
+        url("/fonts/ibm-plex-mono-normal-400.woff") format("woff"),
+        url("/fonts/ibm-plex-mono-normal-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: local("IBM Plex Mono"),
+        local("IBM Plex Mono Medium"),
+        local("IBMPlexMono-Medium"),
+        url("/fonts/ibm-plex-mono-normal-500.woff2") format("woff2"),
+        url("/fonts/ibm-plex-mono-normal-500.woff") format("woff"),
+        url("/fonts/ibm-plex-mono-normal-500.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: local("Fraunces"),
+        local("Fraunces SemiBold Italic"),
+        local("Fraunces-SemiBoldItalic"),
+        url("/fonts/fraunces-italic-600.woff2") format("woff2"),
+        url("/fonts/fraunces-italic-600.woff") format("woff"),
+        url("/fonts/fraunces-italic-600.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: local("Fraunces"),
+        local("Fraunces SemiBold"),
+        local("Fraunces-SemiBold"),
+        url("/fonts/fraunces-normal-600.woff2") format("woff2"),
+        url("/fonts/fraunces-normal-600.woff") format("woff"),
+        url("/fonts/fraunces-normal-600.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

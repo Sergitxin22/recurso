@@ -126,7 +126,7 @@ a { color: inherit; }
 
 h1, h2 {
   font-family: var(--serif);
-  font-weight: 560;
+  font-weight: 600;
   letter-spacing: -0.035em;
 }
 
