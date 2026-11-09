@@ -351,7 +351,7 @@ export function FractalStage() {
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
       const width = parent.clientWidth;
-      const height = 460;
+      const height = width < 640 ? 300 : 460;
       const ratio = window.devicePixelRatio || 1;
       canvas.width = Math.max(1, Math.floor(width * ratio));
       canvas.height = Math.floor(height * ratio);
