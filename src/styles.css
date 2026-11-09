@@ -693,6 +693,7 @@ h2 {
   }
   .card-index { padding-top: 3px; }
   .card-meta { padding-top: 5px; white-space: nowrap; }
+  .hero-stage { display: none; }
   .foot { flex-direction: column; }
   .pegs { min-height: 0; }
   .peg { min-height: 190px; }
