@@ -873,7 +873,17 @@ export function mazeSteps(): MazeStep[] {
   const route = () => trail.map(([r, c]) => `(${r}, ${c})`).join(" → ");
 
   const search = (r: number, c: number) => {
-    if (!inside(r, c)) return;
+    if (!inside(r, c)) {
+      frames.push({
+        title: `buscar(${r}, ${c})`,
+        detail: "se sale del mapa",
+        state: "fail",
+        result: "no",
+      });
+      snap(`(${r}, ${c}) no cabe en el mapa. return, y esta llamada no marca nada.`, 3, null, null);
+      frames.pop();
+      return;
+    }
 
     const wall = mazeMap[r][c] === 0;
     if (wall || onPath[r][c]) {
@@ -921,12 +931,20 @@ export function mazeSteps(): MazeStep[] {
       );
     } else {
       for (const dir of mazeDirections) {
+        const nr = r + dir.dr;
+        const nc = c + dir.dc;
         frames[frames.length - 1] = {
           title: `buscar(${r}, ${c})`,
-          detail: `prueba el ${dir.name}`,
+          detail: `llama hacia el ${dir.name}`,
           state: "waiting",
         };
-        search(r + dir.dr, c + dir.dc);
+        snap(
+          `Desde (${r}, ${c}) llama a buscar(${nr}, ${nc}), hacia el ${dir.name}.`,
+          9,
+          [r, c],
+          null,
+        );
+        search(nr, nc);
       }
     }
 
